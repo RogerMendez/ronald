@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>{% block titulo %}Index{% endblock %}</title>
+	</head>
+	<body>
+		<h1>Hola Django</h1>
+		<nav>
+			<ul>
+				<li>home</li>
+				<li>inicio</li>
+				<li>contacto</li>
+			</ul>
+		</nav>
+		<section class="cuerpo">
+			{% block cuerpo %}
+				<div>
+					<h3>Hola cuerpo</h3>
+				</div>
+			{% endblock cuerpo %}
+		</section>
+	</body>
+</html>

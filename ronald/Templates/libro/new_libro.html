@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>{{ nojodas }}</title>
+	</head>
+	<body>
+		<h1>Hola Django aplicacion libro</h1>
+		{% for a in lista %}
+			{% if a == 2 %}
+				<h2>Es el numero 2</h2>
+			{% elif a != 5  %}
+				<h2>Es diferente de 5</h2>
+			{% else %}
+				<h2>{{ a }}</h2>
+			{% endif %}
+		{% endfor %}
+	</body>
+</html>
